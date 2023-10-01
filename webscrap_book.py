@@ -18,8 +18,8 @@ book = Book(BOOK_NUM, BOOK_NAME)
 # allfreenovel
 website = WebsiteFactory.create(Websites.all_free_novel)
 BASE_URL = website.base_url
-
-folder = f'text/{book.name_underscore}/'
+text_dir = "D:/Users/johnm/OneDrive/ccode_files/webscrape_book/"
+folder = f'{text_dir}text/{book.name_underscore}/'
 if not os.path.exists(folder):
     os.makedirs(folder)
 fname = f'{folder}{book.name}.txt'

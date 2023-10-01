@@ -1,6 +1,6 @@
 fname = 'The Lost Metal'
-
-with open('text/The_Lost_Metal/The Lost Metal.txt', 'r') as f:
+text_dir = "D:/Users/johnm/OneDrive/ccode_files/webscrape_book/text/"
+with open(f'{text_dir}The_Lost_Metal/The Lost Metal.txt', 'r') as f:
     content = f.read()
 old_content = content
 with open(fname + '_new.txt', 'w+') as f:
